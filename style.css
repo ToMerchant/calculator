@@ -1,0 +1,67 @@
+* {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body{
+    background-image: url("https://raw.githubusercontent.com/ToMerchant/calculator/main/calculator-background.jpeg");
+    background-size: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: .5em;
+    column-gap: 1em;
+    background-color: rgb(170, 170, 170);
+    padding: 1.5em;
+    width: 20vw;
+    height: 70vh;
+    border-style: solid;
+    border-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 2.5em;
+    justify-self: end;
+    background-color: rgb(253, 253, 205);
+    align-self: center;
+   width: 90%;
+   overflow-y: hidden;
+   height: auto;
+   justify-content: end;
+   text-align: end;
+   padding-right: 5%;
+   padding-left:5%;
+   border-style: solid;
+   border-radius: 5px;
+   border-width: 2px;
+}
+
+.operands{
+    background-color: orange;
+    font-size: 1.2em;
+}
+
+#buttonEquals{
+    background-color: rgb(104, 233, 104);
+    font-size: 1.2em;
+}
+
+#clear {
+    
+    background-color: rgb(243, 79, 79);
+    font-size: 1.2em;
+}
+
+.numButtons{
+    font-size:1.2em;
+    background-color: lightgray;
+}
+
